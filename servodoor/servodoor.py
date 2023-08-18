@@ -73,7 +73,10 @@ class ServoDoor(serial.Serial):
         rsp_dict = self.send_and_receive(msg_dict)
         return rsp_dict
 
-
+    def get_positions(self):
+        msg_dict = {'cmd': 'positions'}
+        rsp_dict = self.send_and_receive(msg_dict)
+        return rsp_dict
 
 
 
