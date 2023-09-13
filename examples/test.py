@@ -58,25 +58,25 @@ for i in range(num_test):
         cmd = {door: 'open'}
         rsp = ctrl.set_doors(cmd)
         print(f'set_doors: {rsp["doors"]}')
-        time.sleep(1.0)
+        time.sleep(3.0)
     
         cmd = {door: 'close'}
         rsp = ctrl.set_doors(cmd)
         print(f'set_doors: {rsp["doors"]}')
-        time.sleep(1.0)
+        time.sleep(3.0)
         print()
     
     print(f'testing all doors: {door_list}')
     cmd = {door: 'open' for door in door_list}
     rsp = ctrl.set_doors(cmd)
     print(f'set_doors: {rsp["doors"]}')
-    time.sleep(1.0)
+    time.sleep(2.0)
     print()
     
     cmd = {door: 'close' for door in door_list}
     rsp = ctrl.set_doors(cmd)
     print(f'set_doors: {rsp["doors"]}')
-    time.sleep(1.0)
+    time.sleep(2.0)
     print()
 
     
