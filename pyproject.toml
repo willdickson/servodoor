@@ -15,7 +15,7 @@ classifiers = [
     ]
 
 [tool.poetry.dependencies]
-python = ">=3.10,3.12"
+python = ">=3.10,<3.12"
 pyserial = "^3.5"
 
 [build-system]
